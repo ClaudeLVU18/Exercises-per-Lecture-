@@ -449,5 +449,43 @@ using namespace std;
 
 }
 
+//READING CHAR SIZE
 
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+  int main()
+  {
+    cout << "Enter The 'A' alphabet" << endl;
+	char letter;
+
+	string input = "";
+
+	getline(cin, input);
+
+	
+	if (input.length() != 1)
+	{
+		cout << "You have entered more than a single letter" << endl;
+	}
+	else
+	{
+		
+		letter = input.at(0);
+
+		switch (letter)
+		{
+		case 'a':
+		case 'A':
+			cout << "you have entered the 'A' letter\n";
+			break;
+		default:
+			cout << "\nyou did not entered the 'A' letter\n"<<endl;
+		}
+
+	}
+    return 0;
+  }
 
