@@ -281,7 +281,26 @@ using namespace std;
 
   int main()
   {
-    
+    cout << "GInput a letter, I will tell you if it is a vowel or consonant.\n\n";
+    string ltr;
+    cin >> ltr;
+
+    if(cin.fail()) // to check for inappropriate input error
+    {
+    cin.clear();
+    cout << "\n\nERROR: Sorry, that is not a valid character. \n" <<endl;
+    cin>>ltr;
+    }
+    if(!cin.fail()) //allows for the code to end if user input error is present.
+
+    if((ltr == "a") || (ltr == "e") || (ltr == "i") || (ltr == "o") || (ltr == "u") || (ltr == "A") || (ltr == "E") || (ltr == "I") || (ltr == "O") || (ltr == "U"))
+    {
+        cout << "Vowel";
+    }
+    else
+    {
+        cout << "consonant";
+    }
     return 0;
   }
 
@@ -293,7 +312,14 @@ using namespace std;
 
   int main()
   {
-    
+    cout << "What is the capital of France?\n";
+    string capital;
+    cin >> capital;
+
+    if ((capital == "Paris")||(capital == "paris")||(capital == "PARIS"))
+    {
+        cout << "\nThat is correct.";
+    }
     return 0;
   }
 
@@ -305,7 +331,22 @@ using namespace std;
 
   int main()
   {
+    cout << "Welcome to the Legoland Dubai! This is Formula Rossa, how old are you?\n";
+    int age;
+    cin >> age;
+    cout << "How tall are you?\n";
+    double height;
+    cin >> height;
     
+
+    if((height > 0.6) && (age > 5))
+    {
+        cout << "Welcome, you may enter.";
+    }
+    else
+    {
+        cout << "Sorry, you are not eligible to enter the ride.";
+    }
     return 0;
   }
 
