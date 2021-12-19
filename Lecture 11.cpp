@@ -1,4 +1,10 @@
+#include <iostream> //allows for variables to be loaded.
+#include <string> // allows string to be used.
+#include <stdlib.h> // allows for "system("CLS")" to be used to clear the console.
+#include <cmath> // includes math functions onto the program.
 
+
+using namespace std;
 
 //risefallwhilestar
 
