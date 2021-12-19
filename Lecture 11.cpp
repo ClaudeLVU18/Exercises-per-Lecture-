@@ -56,3 +56,10 @@ void risefallwhileloopstar()
         cout<< y * x;
     }
 }
+
+    int main()
+{
+  
+  
+  return 0;
+}
