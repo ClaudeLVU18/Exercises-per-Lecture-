@@ -115,3 +115,10 @@ void month()
         cout << month[i] << endl;
     }
 }
+
+int main()
+{
+  
+  
+  return 0;
+}
