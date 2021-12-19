@@ -105,3 +105,94 @@ void forlooparray()
 
     
 }
+
+//Descending 7 stars
+void L10descstarloop7()
+{
+    for (int i=1; i<= 7; i++) {
+        for (int j=i; j<=7; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+//Cube
+void cubeforloop()
+{
+    cout<<"Cube a number up to (Minimum: 1): ";
+    int cube;
+    cin >> cube;
+    for (int x=1; x<= cube; x++)
+    {
+        cout <<"Number is : "<<x<<" and the cube of "<<x<<" is: "<< pow(x,3);
+        cout << endl;
+    }
+}
+
+//9s
+
+void by9s()
+{
+    for(int num = 100; num <= 200;)
+    {
+    if((num % 9) == 0)
+    {
+        cout <<num;
+    }
+    else
+    {
+        cout << "\n\n" << num << " is an odd number.";
+        
+    }
+    }
+    cin.get();
+
+}
+
+//Rising star
+void whilestar()
+{
+    int x=0;
+    while (x<= 4) 
+    {
+        x++;
+        int y=1;
+        while (y<=x)
+        {
+            y++;
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+//Rise and fall star
+void risefallwhileloopstar()
+{
+    int x=0;
+    while (x<= 5) 
+    {
+        x++;
+        int y=x;
+        while (y<=5)
+        {
+            y++;
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    int a=0;
+    while (a<= 4) 
+    {
+        a++;
+        int b=1;
+        while (b<=a)
+        {
+            b++;
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
