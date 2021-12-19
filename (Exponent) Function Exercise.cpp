@@ -36,7 +36,7 @@ int main()
 		cin.ignore(1000, '\n');
 		cin >> input;
 	}
-	cout << rootfunction(input) << endl;
+	cout << expofunction(input) << endl;
 
 
 
